@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.svg" type="svg/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <title>Totembo</title>
+</head>
+<body>
+
+  <div class="carts">
+    <div class="cart-modal">
+      <div class="cart-modal-top">
+        <h3 class="cart-modal-title" id="lang-carts">Корзина</h3>
+        <button class="cart-modal-btn">
+          <img src="assets/icons/close.svg" alt="close.svg">
+        </button>
+      </div>
+
+      <div class="cart-modal-checklist"></div>
+
+      <div class="cart-modal-bottom">
+        <h3 class="cart-modal-text" id="lang-order">Заказать</h3>
+        <span class="cart-modal-prices">0</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="likes">
+    <div class="likes-modal">
+      <div class="likes-modal-top">
+        <h3 class="likes-modal-title" id="lang-likes">Избранное</h3>
+        <button class="likes-modal-btn">
+          <img src="assets/icons/close.svg" alt="close.svg">
+        </button>
+      </div>
+
+      <div class="likes-modal-checklist"></div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <nav class="header-nav">
+        <div class="header-nav-content">
+          <a href="#" class="header-nav-logo">Totembo</a>
+
+          <ul class="header-nav-lists">
+            <li><a href="#products" class="header-nav-link" id="lang-header-link1">Часы</a></li>
+            <li><a href="#products" class="header-nav-link" id="lang-header-link2">Кольца</a></li>
+            <li><a href="#products" class="header-nav-link" id="lang-header-link3">Серьги</a></li>
+            <li><a href="#products" class="header-nav-link" id="lang-header-link4">Браслеты</a></li>
+            <li><a href="#products" class="header-nav-link" id="lang-header-link5">Цепочки</a></li>
+            <button class="header-nav-close">
+              <img src="assets/icons/close.svg" alt="close.svg">
+            </button>
+          </ul>
+
+          <div class="header-nav-btns">
+            <button class="header-nav-btn menu">
+              <img src="assets/icons/menu.svg" alt="menu.svg">
+            </button>
+            <button class="header-nav-btn lang">
+              <select class="change-lang">
+                <option value="ru" selected>RU</option>
+                <option value="en">EN</option>
+                <option value="uz">UZ</option>
+              </select>
+            </button>
+            <button class="header-nav-btn likes-open">
+              <span class="header-likes-count">0</span>
+              <img src="assets/icons/favourite.svg" alt="favourite.svg">
+            </button>
+            <button class="header-nav-btn cart-open">
+              <span class="header-cart-count">0</span>
+              <img src="assets/icons/cart.svg" alt="cart.svg">
+            </button>
+            <button class="header-nav-btn">
+              <img src="assets/icons/account.svg" alt="account.svg">
+            </button>
+            <button class="header-nav-btn">
+              <img src="assets/icons/search.svg" alt="search.svg">
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-content">
+        <div class="header-content-item">
+          <img src="assets/images/header-1.png" alt="header-1.png" class="header-item-img">
+          <span class="label">50%</span>
+          <div class="header-item-info">
+            <h3 class="header-item-title" id="lang-header-title1">Мужские часы</h3>
+            <p class="header-item-name">Pierre Lannier</p>
+            <p class="header-item-price" id="lang-header-price1">1 280 000 UZS</p>
+          </div>
+        </div>
+        <div class="header-content-item">
+          <img src="assets/images/header-2.png" alt="header-2.png" class="header-item-img">
+          <span class="label">20%</span>
+          <div class="header-item-info">
+            <h3 class="header-item-title" id="lang-header-title2">Мужские часы</h3>
+            <p class="header-item-name">Swiss Military Chrono</p>
+            <p class="header-item-price" id="lang-header-price2">1 500 000 UZS</p>
+          </div>
+        </div>
+        <div class="header-content-item">
+          <img src="assets/images/header-3.png" alt="header-3.png" class="header-item-img">
+          <span class="label">20%</span>
+          <div class="header-item-info">
+            <h3 class="header-item-title" id="lang-header-title3">Черная мужская серьга</h3>
+            <p class="header-item-name">DIADEMA GRAND</p>
+            <p class="header-item-price" id="lang-header-price3">95 000 UZS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <section class="products" id="products">
+        <h2 class="section-title" id="lang-section-title1">Лидеры продаж</h2>
+        <div class="products-cards">
+          <div class="products-card" id="cartier">
+            <span class="products-card-count">0</span>
+            <span class="products-card-sale" id="lang-new-products">new</span>
+
+            <div class="products-card-btns">
+              <button class="products-card-btn favourite">
+                <img src="assets/icons/favourite.svg" alt="favourite.svg">
+              </button>
+              <button class="products-card-btn cart">
+                <img src="assets/icons/cart.svg" alt="cart.svg">
+              </button>
+            </div>
+
+            <img src="assets/images/product-1.png" alt="product-1.png" class="products-card-img">
+            <p class="products-card-title" id="lang-products-title1">Мужские часы</p>
+            <h3 class="products-card-name">Cartier</h3>
+            <p class="products-card-price" id="lang-products-price1">1 300 000 UZS</p>
+          </div>
+
+          <div class="products-card" id="audemars">
+            <span class="products-card-count">0</span>
+            <span class="products-card-sale">15%</span>
+
+            <div class="products-card-btns">
+              <button class="products-card-btn favourite">
+                <img src="assets/icons/favourite.svg" alt="favourite.svg">
+              </button>
+              <button class="products-card-btn cart">
+                <img src="assets/icons/cart.svg" alt="cart.svg">
+              </button>
+            </div>
+
+            <img src="assets/images/product-2.png" alt="product-2.png" class="products-card-img">
+            <p class="products-card-title" id="lang-products-title2">Мужские часы</p>
+            <h3 class="products-card-name">AUDEMARS PIGUET</h3>
+            <p class="products-card-price" id="lang-products-price2">1 420 000 UZS</p>
+          </div>
+
+          <div class="products-card" id="tag">
+            <span class="products-card-count">0</span>
+            <span class="products-card-sale">30%</span>
+
+            <div class="products-card-btns">
+              <button class="products-card-btn favourite">
+                <img src="assets/icons/favourite.svg" alt="favourite.svg">
+              </button>
+              <button class="products-card-btn cart">
+                <img src="assets/icons/cart.svg" alt="cart.svg">
+              </button>
+            </div>
+
+            <img src="assets/images/product-3.png" alt="product-3.png" class="products-card-img">
+            <p class="products-card-title" id="lang-products-title3">Мужские часы</p>
+            <h3 class="products-card-name">TAG HEUER CARRERA SPACE</h3>
+            <p class="products-card-price" id="lang-products-price3">1 120 000 UZS</p>
+          </div>
+
+          <div class="products-card" id="duchen">
+            <span class="products-card-count">0</span>
+            <span class="products-card-sale">10%</span>
+
+            <div class="products-card-btns">
+              <button class="products-card-btn favourite">
+                <img src="assets/icons/favourite.svg" alt="favourite.svg">
+              </button>
+              <button class="products-card-btn cart">
+                <img src="assets/icons/cart.svg" alt="cart.svg">
+              </button>
+            </div>
+
+            <img src="assets/images/product-4.png" alt="product-4.png" class="products-card-img">
+            <p class="products-card-title" id="lang-products-title4">Мужские часы</p>
+            <h3 class="products-card-name">L DUCHEN</h3>
+            <p class="products-card-price" id="lang-products-price4">950 000 UZS</p>
+          </div>
+
+          <div class="products-card" id="rolex">
+            <span class="products-card-count">0</span>
+
+            <div class="products-card-btns">
+              <button class="products-card-btn favourite">
+                <img src="assets/icons/favourite.svg" alt="favourite.svg">
+              </button>
+              <button class="products-card-btn cart">
+                <img src="assets/icons/cart.svg" alt="cart.svg">
+              </button>
+            </div>
+
+            <img src="assets/images/product-5.png" alt="product-5.png" class="products-card-img">
+            <p class="products-card-title" id="lang-products-title5">Мужские часы</p>
+            <h3 class="products-card-name">ROLEX</h3>
+            <p class="products-card-price" id="lang-products-price5">2 450 000 UZS</p>
+          </div>
+
+          <div class="products-card" id="spikes">
+            <span class="products-card-count">0</span>
+
+            <div class="products-card-btns">
+              <button class="products-card-btn favourite">
+                <img src="assets/icons/favourite.svg" alt="favourite.svg">
+              </button>
+              <button class="products-card-btn cart">
+                <img src="assets/icons/cart.svg" alt="cart.svg">
+              </button>
+            </div>
+
+            <img src="assets/images/product-6.png" alt="product-6.png" class="products-card-img">
+            <p class="products-card-title" id="lang-products-title6">Мужское кольцо</p>
+            <h3 class="products-card-name">SPIKES </h3>
+            <p class="products-card-price" id="lang-products-price6">1 450 000 UZS</p>
+          </div>
+
+          <div class="products-card" id="pierrelannier">
+            <span class="products-card-count">0</span>
+            <span class="products-card-sale">50%</span>
+
+            <div class="products-card-btns">
+              <button class="products-card-btn favourite">
+                <img src="assets/icons/favourite.svg" alt="favourite.svg">
+              </button>
+              <button class="products-card-btn cart">
+                <img src="assets/icons/cart.svg" alt="cart.svg">
+              </button>
+            </div>
+
+            <img src="assets/images/product-7.png" alt="product-7.png" class="products-card-img">
+            <p class="products-card-title" id="lang-products-title7">Мужские часы</p>
+            <h3 class="products-card-name">PIERRE LANNIER</h3>
+            <p class="products-card-price" id="lang-products-price7">1 280 000 UZS</p>
+          </div>
+
+          <div class="products-card" id="tiamo">
+            <span class="products-card-count">0</span>
+            <span class="products-card-sale">20%</span>
+
+            <div class="products-card-btns">
+              <button class="products-card-btn favourite">
+                <img src="assets/icons/favourite.svg" alt="favourite.svg">
+              </button>
+              <button class="products-card-btn cart">
+                <img src="assets/icons/cart.svg" alt="cart.svg">
+              </button>
+            </div>
+
+            <img src="assets/images/product-8.png" alt="product-8.png" class="products-card-img">
+            <p class="products-card-title" id="lang-products-title8">Мужское кольцо</p>
+            <h3 class="products-card-name">TIAMO</h3>
+            <p class="products-card-price" id="lang-products-price8">1 000 000 UZS</p>
+          </div>
+
+          <div class="products-card" id="tag2">
+            <span class="products-card-count">0</span>
+            <span class="products-card-sale">30%</span>
+
+            <div class="products-card-btns">
+              <button class="products-card-btn favourite">
+                <img src="assets/icons/favourite.svg" alt="favourite.svg">
+              </button>
+              <button class="products-card-btn cart">
+                <img src="assets/icons/cart.svg" alt="cart.svg">
+              </button>
+            </div>
+
+            <img src="assets/images/product-9.png" alt="product-9.png" class="products-card-img">
+            <p class="products-card-title" id="lang-products-title9">Мужские часы</p>
+            <h3 class="products-card-name">TAG HEUER CARRERA SPACE</h3>
+            <p class="products-card-price" id="lang-products-price9">1 120 000 UZS</p>
+          </div>
+
+          <div class="products-card" id="montblanc">
+            <span class="products-card-count">0</span>
+
+            <div class="products-card-btns">
+              <button class="products-card-btn favourite">
+                <img src="assets/icons/favourite.svg" alt="favourite.svg">
+              </button>
+              <button class="products-card-btn cart">
+                <img src="assets/icons/cart.svg" alt="cart.svg">
+              </button>
+            </div>
+
+            <img src="assets/images/product-10.png" alt="product-10.png" class="products-card-img">
+            <p class="products-card-title" id="lang-products-title10">Мужской браслет</p>
+            <h3 class="products-card-name">MONTBLANC</h3>
+            <p class="products-card-price" id="lang-products-price10">845 000 UZS</p>
+          </div>
+
+          <div class="products-card" id="jaeger">
+            <span class="products-card-count">0</span>
+            <span class="products-card-sale">10%</span>
+
+            <div class="products-card-btns">
+              <button class="products-card-btn favourite">
+                <img src="assets/icons/favourite.svg" alt="favourite.svg">
+              </button>
+              <button class="products-card-btn cart">
+                <img src="assets/icons/cart.svg" alt="cart.svg">
+              </button>
+            </div>
+
+            <img src="assets/images/product-11.png" alt="product-11.png" class="products-card-img">
+            <p class="products-card-title" id="lang-products-title11">Мужские часы</p>
+            <h3 class="products-card-name">JAEGER-LECOULTRE</h3>
+            <p class="products-card-price" id="lang-products-price11">2 450 000 UZS</p>
+          </div>
+
+          <div class="products-card" id="hockey">
+            <span class="products-card-count">0</span>
+
+            <div class="products-card-btns">
+              <button class="products-card-btn favourite">
+                <img src="assets/icons/favourite.svg" alt="favourite.svg">
+              </button>
+              <button class="products-card-btn cart">
+                <img src="assets/icons/cart.svg" alt="cart.svg">
+              </button>
+            </div>
+
+            <img src="assets/images/product-12.png" alt="product-12.png" class="products-card-img">
+            <p class="products-card-title" id="lang-products-title12">Мужской браслет</p>
+            <h3 class="products-card-name">HOCKEY</h3>
+            <p class="products-card-price" id="lang-products-price12">750 000 UZS</p>
+          </div>
+        </div>
+        <button class="products-btn" id="lang-products-more">Еще</button>
+      </section>
+
+      <section class="news">
+        <h2 class="section-title" id="lang-section-title2">Последние новости</h2>
+        <div class="news-contents">
+          <div class="news-content-item">
+            <p class="news-content-subtitle" id="lang-news-subtitle1">Советы</p>
+            <h3 class="news-content-title" id="lang-news-title1">Как выбрать первые японские часы – советы эксперта</h3>
+            <p class="news-content-text" id="lang-news-text1">Задумавшись о том, какие японские часы приобрести, следует держать в уме следующие цифры: в Японии существуют около 2800 фирм, так или иначе связанных с часовым...</p>
+            <div class="news-content-calendar">
+              <img src="assets/icons/time.svg" alt="time.svg">
+              <span>19.04.2021 | 17:30</span>
+            </div>
+          </div>
+
+          <div class="news-content-item">
+            <p class="news-content-subtitle" id="lang-news-subtitle2">Советы</p>
+            <h3 class="news-content-title" id="lang-news-title2">HAIQIN Мужские роскошные механические часы</h3>
+            <p class="news-content-text" id="lang-news-text2">Водонепроницаемые часы с двойным турбийоном мужские автоматические часы — купить товар онлайн с бесплатной доставкой до всему миру!</p>
+            <div class="news-content-calendar">
+              <img src="assets/icons/time.svg" alt="time.svg">
+              <span>20.05.2021 | 18:30</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <ul class="footer-list">
+          <a href="#" class="footer-logo">TOTEMBO</a>
+          <li><a href="#" class="footer-link" id="lang-footer-link1">Скидки</a></li>
+          <li><a href="#" class="footer-link" id="lang-footer-link2">Блог</a></li>
+          <li><a href="#" class="footer-link" id="lang-footer-link3">Частые вопросы</a></li>
+          <li><a href="#" class="footer-link" id="lang-footer-link4">Доставка</a></li>
+          <li><a href="#" class="footer-link" id="lang-footer-link5">Гарантия</a></li>
+          <li><a href="#" class="footer-link" id="lang-footer-link6">Возврат</a></li>
+        </ul>
+
+        <ul class="footer-list">
+          <h2 class="footer-title" id="lang-footer-title1">Товары</h2>
+          <li><a href="#" class="footer-link" id="lang-footer-link7">Часы</a></li>
+          <li><a href="#" class="footer-link" id="lang-footer-link8">Кольца</a></li>
+          <li><a href="#" class="footer-link" id="lang-footer-link9">Серьги</a></li>
+          <li><a href="#" class="footer-link" id="lang-footer-link10">Браслеты</a></li>
+          <li><a href="#" class="footer-link" id="lang-footer-link11">Клатчи</a></li>
+          <li><a href="#" class="footer-link" id="lang-footer-link12">Цепочки</a></li>
+        </ul>
+
+        <ul class="footer-list">
+          <h2 class="footer-title" id="lang-footer-title2">Контакты</h2>
+          <div class="footer-contacts">
+            <p class="footer-contact" id="lang-footer-street">Ул. Аския, Яккасарайский район, Ташкент, Узбекистан</p>
+            <p class="footer-contact telephones">
+              <span>+998 97 777 77 97</span>
+              <span>+998 97 777 79 97</span>
+            </p>
+            <a href="#" class="footer-contact">totembo@exapmle.com</a>
+          </div>
+          <h4 class="footer-subtitle" id="lang-footer-secials">СОЦИАЛЬНЫЕ СЕТИ:</h4>
+          <div class="footer-socials">
+            <a href="#" class="footer-socials-link">
+              <img src="assets/icons/facebook.svg" alt="facebook.svg">
+            </a>
+            <a href="#" class="footer-socials-link">
+              <img src="assets/icons/instagram.svg" alt="instagram.svg">
+            </a>
+            <a href="#" class="footer-socials-link">
+              <img src="assets/icons/twitter.svg" alt="twitter.svg">
+            </a>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/language.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
